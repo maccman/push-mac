@@ -1,0 +1,3 @@
+[submodule "MASPreferences"]
+	path = Vendor/MASPreferences
+	url = git@github.com:shpakovski/MASPreferences.git

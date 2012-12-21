@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA38716D168101AF0024287F /* StripeConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = FA38716B168101AF0024287F /* StripeConnect.m */; };
+		FA38716E168101AF0024287F /* StripeConnect.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA38716C168101AF0024287F /* StripeConnect.xib */; };
+		FA387170168101DC0024287F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA38716F168101DC0024287F /* WebKit.framework */; };
 		FAEA5D9C1680ED20009F2FB8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEA5D9B1680ED20009F2FB8 /* Cocoa.framework */; };
 		FAEA5DA61680ED20009F2FB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAEA5DA41680ED20009F2FB8 /* InfoPlist.strings */; };
 		FAEA5DA81680ED20009F2FB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA5DA71680ED20009F2FB8 /* main.m */; };
 		FAEA5DAC1680ED20009F2FB8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FAEA5DAA1680ED20009F2FB8 /* Credits.rtf */; };
 		FAEA5DAF1680ED20009F2FB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA5DAE1680ED20009F2FB8 /* AppDelegate.m */; };
 		FAEA5DB21680ED20009F2FB8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAEA5DB01680ED20009F2FB8 /* MainMenu.xib */; };
+		FAEA5DBA1680ED76009F2FB8 /* StatusMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA5DB91680ED76009F2FB8 /* StatusMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA38716A168101AF0024287F /* StripeConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StripeConnect.h; sourceTree = "<group>"; };
+		FA38716B168101AF0024287F /* StripeConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StripeConnect.m; sourceTree = "<group>"; };
+		FA38716C168101AF0024287F /* StripeConnect.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StripeConnect.xib; sourceTree = "<group>"; };
+		FA38716F168101DC0024287F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		FA38717616811F450024287F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		FAEA5D971680ED20009F2FB8 /* Stripe Push.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stripe Push.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEA5D9B1680ED20009F2FB8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FAEA5D9E1680ED20009F2FB8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -29,6 +38,8 @@
 		FAEA5DAD1680ED20009F2FB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAEA5DAE1680ED20009F2FB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FAEA5DB11680ED20009F2FB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FAEA5DB81680ED76009F2FB8 /* StatusMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusMenu.h; sourceTree = "<group>"; };
+		FAEA5DB91680ED76009F2FB8 /* StatusMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA387170168101DC0024287F /* WebKit.framework in Frameworks */,
 				FAEA5D9C1680ED20009F2FB8 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +58,7 @@
 		FAEA5D8C1680ED1F009F2FB8 = {
 			isa = PBXGroup;
 			children = (
+				FA38716F168101DC0024287F /* WebKit.framework */,
 				FAEA5DA11680ED20009F2FB8 /* Stripe Push */,
 				FAEA5D9A1680ED20009F2FB8 /* Frameworks */,
 				FAEA5D981680ED20009F2FB8 /* Products */,
@@ -83,9 +96,14 @@
 			isa = PBXGroup;
 			children = (
 				FAEA5DAD1680ED20009F2FB8 /* AppDelegate.h */,
+				FAEA5DB81680ED76009F2FB8 /* StatusMenu.h */,
+				FAEA5DB91680ED76009F2FB8 /* StatusMenu.m */,
 				FAEA5DAE1680ED20009F2FB8 /* AppDelegate.m */,
 				FAEA5DB01680ED20009F2FB8 /* MainMenu.xib */,
 				FAEA5DA21680ED20009F2FB8 /* Supporting Files */,
+				FA38716A168101AF0024287F /* StripeConnect.h */,
+				FA38716B168101AF0024287F /* StripeConnect.m */,
+				FA38716C168101AF0024287F /* StripeConnect.xib */,
 			);
 			path = "Stripe Push";
 			sourceTree = "<group>";
@@ -93,6 +111,7 @@
 		FAEA5DA21680ED20009F2FB8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA38717616811F450024287F /* Constants.h */,
 				FAEA5DA31680ED20009F2FB8 /* Stripe Push-Info.plist */,
 				FAEA5DA41680ED20009F2FB8 /* InfoPlist.strings */,
 				FAEA5DA71680ED20009F2FB8 /* main.m */,
@@ -156,6 +175,7 @@
 				FAEA5DA61680ED20009F2FB8 /* InfoPlist.strings in Resources */,
 				FAEA5DAC1680ED20009F2FB8 /* Credits.rtf in Resources */,
 				FAEA5DB21680ED20009F2FB8 /* MainMenu.xib in Resources */,
+				FA38716E168101AF0024287F /* StripeConnect.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +188,8 @@
 			files = (
 				FAEA5DA81680ED20009F2FB8 /* main.m in Sources */,
 				FAEA5DAF1680ED20009F2FB8 /* AppDelegate.m in Sources */,
+				FAEA5DBA1680ED76009F2FB8 /* StatusMenu.m in Sources */,
+				FA38716D168101AF0024287F /* StripeConnect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,11 +279,13 @@
 		FAEA5DB61680ED20009F2FB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stripe Push/Stripe Push-Prefix.pch";
 				INFOPLIST_FILE = "Stripe Push/Stripe Push-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "97A9BAC5-ADEB-438C-9895-B1B4AAA0EDC2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -269,11 +293,13 @@
 		FAEA5DB71680ED20009F2FB8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stripe Push/Stripe Push-Prefix.pch";
 				INFOPLIST_FILE = "Stripe Push/Stripe Push-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "97A9BAC5-ADEB-438C-9895-B1B4AAA0EDC2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -297,6 +323,7 @@
 				FAEA5DB71680ED20009F2FB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
