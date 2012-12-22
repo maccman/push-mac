@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MASPreferencesWindowController.h"
 
 @interface StatusMenu : NSObject
 
-- (IBAction) preferences:(id)sender;
+- (IBAction) openPreferences:(id)sender;
+- (IBAction) quit:(id)sender;
 
 @property (readwrite, retain) NSWindowController* stripeConnect;
+@property (readwrite, retain) MASPreferencesWindowController* preferences;
 
 @end

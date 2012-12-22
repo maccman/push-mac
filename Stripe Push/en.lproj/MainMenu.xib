@@ -49,22 +49,22 @@
 						<string key="NSTitle">Preferences...</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<object class="NSCustomResource" key="NSOnImage" id="127176726">
+						<object class="NSCustomResource" key="NSOnImage" id="768390792">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">NSMenuCheckmark</string>
 						</object>
-						<object class="NSCustomResource" key="NSMixedImage" id="228238481">
+						<object class="NSCustomResource" key="NSMixedImage" id="164338364">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">NSMenuMixedState</string>
 						</object>
 					</object>
-					<object class="NSMenuItem" id="73761866">
+					<object class="NSMenuItem" id="569370098">
 						<reference key="NSMenu" ref="745983971"/>
 						<string key="NSTitle">Quit</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="127176726"/>
-						<reference key="NSMixedImage" ref="228238481"/>
+						<reference key="NSOnImage" ref="768390792"/>
+						<reference key="NSMixedImage" ref="164338364"/>
 					</object>
 				</array>
 			</object>
@@ -89,11 +89,19 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">preferences:</string>
+						<string key="label">openPreferences:</string>
 						<reference key="source" ref="326917740"/>
 						<reference key="destination" ref="736269687"/>
 					</object>
-					<int key="connectionID">553</int>
+					<int key="connectionID">554</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">quit:</string>
+						<reference key="source" ref="326917740"/>
+						<reference key="destination" ref="569370098"/>
+					</object>
+					<int key="connectionID">555</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -142,7 +150,7 @@
 						<reference key="object" ref="745983971"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="736269687"/>
-							<reference ref="73761866"/>
+							<reference ref="569370098"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -153,7 +161,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">552</int>
-						<reference key="object" ref="73761866"/>
+						<reference key="object" ref="569370098"/>
 						<reference key="parent" ref="745983971"/>
 					</object>
 				</array>
@@ -173,7 +181,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">553</int>
+			<int key="maxID">555</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -203,16 +211,16 @@
 					<string key="className">StatusMenu</string>
 					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="authenticate:">id</string>
-						<string key="preferences:">id</string>
+						<string key="openPreferences:">id</string>
+						<string key="quit:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="authenticate:">
-							<string key="name">authenticate:</string>
+						<object class="IBActionInfo" key="openPreferences:">
+							<string key="name">openPreferences:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBActionInfo" key="preferences:">
-							<string key="name">preferences:</string>
+						<object class="IBActionInfo" key="quit:">
+							<string key="name">quit:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 					</dictionary>

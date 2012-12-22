@@ -8,6 +8,9 @@
 
 #import "StatusMenu.h"
 #import "StripeConnect.h"
+#import "GeneralPreferences.h"
+#import "AccountPreferences.h"
+#import "MASPreferencesWindowController.h"
 
 @implementation StatusMenu
 
@@ -21,8 +24,19 @@
     [self.stripeConnect showWindow:nil];
 }
 
-- (IBAction)preferences:(id)sender {
-    
+- (IBAction)openPreferences:(id)sender {
+    if (self.preferences == nil) {
+        NSViewController *generalPreferences = [[GeneralPreferences alloc] init];
+        NSViewController *accountPreferences = [[AccountPreferences alloc] init];
+        NSArray *controllers = [[NSArray alloc] initWithObjects:generalPreferences, accountPreferences, nil];
+        self.preferences = [[MASPreferencesWindowController alloc] initWithViewControllers:controllers title:@"Preferences"];
+    }
+    [self.preferences selectControllerAtIndex:0];
+    [self.preferences showWindow:nil];
+}
+
+- (IBAction)quit:(id)sender {
+    [NSApp terminate: nil];
 }
 
 @end
