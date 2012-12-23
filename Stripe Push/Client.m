@@ -34,24 +34,4 @@
     return self;
 }
 
-- (void)getPreferences: (void (^)(NSDictionary *params, NSError *error))block {
-    [[Client sharedClient] getPath:@"/user"
-                        parameters:nil
-                           success:^(AFHTTPRequestOperation *operation, id JSON) {
-                               block(JSON, nil);
-                           } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                               block(nil, error);
-                           }];
-}
-
-- (void)updatePreferences:(NSDictionary *)params block:(void (^)(NSError *error))block {
-    [[Client sharedClient] putPath:@"/user"
-                        parameters:params
-                           success:^(AFHTTPRequestOperation *operation, id JSON) {
-                               block(nil);
-                           } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                               block(error);
-                           }];
-}
-
 @end

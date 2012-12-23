@@ -11,6 +11,4 @@
 
 @interface Client : AFHTTPClient
 + (Client *)sharedClient;
-- (void)getPreferences: (void (^)(NSDictionary *params, NSError *error))block;
-- (void)updatePreferences:(NSDictionary *)params block:(void (^)(NSError *error))block;
 @end

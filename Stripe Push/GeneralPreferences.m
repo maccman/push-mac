@@ -8,9 +8,7 @@
 
 #import "GeneralPreferences.h"
 #import "Client.h"
-
-#define chargeValues @[@0, @100, @200, @400, @800, @2000, @5000, @-1]
-#define transferValues @[@0, @-1]
+#import "User.h"
 
 @implementation GeneralPreferences
 
@@ -25,18 +23,18 @@
 #pragma mark MASPreferencesViewController
 
 - (void) awakeFromNib {
-    [[Client sharedClient] getPreferences:^(NSDictionary *params, NSError *error) {
-        if (error) {
-            NSLog(@"Error getting preferences: %@", error);
-            return;
-        }
-        
-        NSInteger chargeIndex = [chargeValues indexOfObject:[params objectForKey:@"charge_notifications"]];
-        [self.chargeNotifications selectItemAtIndex:chargeIndex];
+    if (self.user.authorized)
+        [self.user load:^(User *user, NSError *error) {
+            if (error) {
+                NSLog(@"Error loading user: %@", error);
+            } else {
+                NSLog(@"Loaded user: %@", user);
+            }
+        }];
+}
 
-        NSInteger transferIndex = [transferValues indexOfObject:[params objectForKey:@"transfer_notifications"]];
-        [self.transferNotifications selectItemAtIndex:transferIndex];
-    }];
+- (User*) user {
+    return [User sharedUser];
 }
 
 - (NSString *)identifier
@@ -54,23 +52,18 @@
     return @"General";
 }
 
-- (void) updatePreferences {
-    
-    NSInteger chargeIndex = [self.chargeNotifications indexOfSelectedItem];
-    NSNumber *chargeValue = [chargeValues objectAtIndex:chargeIndex];
-
-    NSInteger transferIndex = [self.transferNotifications indexOfSelectedItem];
-    NSNumber *transferValue = [transferValues objectAtIndex:transferIndex];
-    
-    NSDictionary *params = @{@"charge_notifications": chargeValue, @"transfer_notifications": transferValue};
-    
-    [[Client sharedClient] updatePreferences:params block:^(NSError *error) {
-        NSLog(@"Error updating preferences: %@", error);
-    }];
-}
-
 - (BOOL) commitEditing {
-    [self updatePreferences];
+    if (self.user.authorized) {
+        NSLog(@"Saving user");
+        
+        [self.user saveSelf:^(NSError *error) {
+            NSLog(@"Saved user");
+            if (error) {
+                NSLog(@"Error updating user: %@", error);
+            }
+        }];
+    }
+    
     return[super commitEditing];
 }
 

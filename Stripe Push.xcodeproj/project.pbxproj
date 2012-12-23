@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA38716D168101AF0024287F /* StripeConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = FA38716B168101AF0024287F /* StripeConnect.m */; };
-		FA38716E168101AF0024287F /* StripeConnect.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA38716C168101AF0024287F /* StripeConnect.xib */; };
 		FA387170168101DC0024287F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA38716F168101DC0024287F /* WebKit.framework */; };
 		FA951A5D168514BD003B9E57 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FA951A57168514BD003B9E57 /* .gitignore */; };
 		FA951A5E168514BD003B9E57 /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA951A59168514BD003B9E57 /* MASPreferencesWindow.xib */; };
@@ -28,6 +26,11 @@
 		FA951A871685305C003B9E57 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA951A7D1685305C003B9E57 /* AFXMLRequestOperation.m */; };
 		FA951A881685305C003B9E57 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FA951A7F1685305C003B9E57 /* UIImageView+AFNetworking.m */; };
 		FA951A8B16853140003B9E57 /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = FA951A8A16853140003B9E57 /* Client.m */; };
+		FA951A8E168621CB003B9E57 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FA951A8D168621CB003B9E57 /* User.m */; };
+		FA951A9016866738003B9E57 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA951A8F16866738003B9E57 /* SystemConfiguration.framework */; };
+		FA951A941686A65F003B9E57 /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = FA951A931686A65F003B9E57 /* NSFileManager+DirectoryLocations.m */; };
+		FA951A981686ADD5003B9E57 /* StripeConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = FA951A961686ADD5003B9E57 /* StripeConnect.m */; };
+		FA951A991686ADD5003B9E57 /* StripeConnect.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA951A971686ADD5003B9E57 /* StripeConnect.xib */; };
 		FAEA5D9C1680ED20009F2FB8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEA5D9B1680ED20009F2FB8 /* Cocoa.framework */; };
 		FAEA5DA61680ED20009F2FB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAEA5DA41680ED20009F2FB8 /* InfoPlist.strings */; };
 		FAEA5DA81680ED20009F2FB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA5DA71680ED20009F2FB8 /* main.m */; };
@@ -38,9 +41,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA38716A168101AF0024287F /* StripeConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StripeConnect.h; sourceTree = "<group>"; };
-		FA38716B168101AF0024287F /* StripeConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StripeConnect.m; sourceTree = "<group>"; };
-		FA38716C168101AF0024287F /* StripeConnect.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StripeConnect.xib; sourceTree = "<group>"; };
 		FA38716F168101DC0024287F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		FA38717616811F450024287F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		FA951A57168514BD003B9E57 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -76,6 +76,14 @@
 		FA951A7F1685305C003B9E57 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		FA951A8916853140003B9E57 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
 		FA951A8A16853140003B9E57 /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
+		FA951A8C168621CB003B9E57 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		FA951A8D168621CB003B9E57 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		FA951A8F16866738003B9E57 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FA951A921686A65F003B9E57 /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
+		FA951A931686A65F003B9E57 /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
+		FA951A951686ADD5003B9E57 /* StripeConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StripeConnect.h; sourceTree = "<group>"; };
+		FA951A961686ADD5003B9E57 /* StripeConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StripeConnect.m; sourceTree = "<group>"; };
+		FA951A971686ADD5003B9E57 /* StripeConnect.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StripeConnect.xib; sourceTree = "<group>"; };
 		FAEA5D971680ED20009F2FB8 /* Stripe Push.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stripe Push.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEA5D9B1680ED20009F2FB8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FAEA5D9E1680ED20009F2FB8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -98,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA951A9016866738003B9E57 /* SystemConfiguration.framework in Frameworks */,
 				FA387170168101DC0024287F /* WebKit.framework in Frameworks */,
 				FAEA5D9C1680ED20009F2FB8 /* Cocoa.framework in Frameworks */,
 			);
@@ -109,6 +118,7 @@
 		FA951A55168514BD003B9E57 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				FA951A911686A65F003B9E57 /* NSFileManager */,
 				FA951A6C1685305C003B9E57 /* AFNetworking */,
 				FA951A56168514BD003B9E57 /* MASPreferences */,
 			);
@@ -155,9 +165,19 @@
 			path = AFNetworking/AFNetworking;
 			sourceTree = "<group>";
 		};
+		FA951A911686A65F003B9E57 /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				FA951A921686A65F003B9E57 /* NSFileManager+DirectoryLocations.h */,
+				FA951A931686A65F003B9E57 /* NSFileManager+DirectoryLocations.m */,
+			);
+			path = NSFileManager;
+			sourceTree = "<group>";
+		};
 		FAEA5D8C1680ED1F009F2FB8 = {
 			isa = PBXGroup;
 			children = (
+				FA951A8F16866738003B9E57 /* SystemConfiguration.framework */,
 				FA951A55168514BD003B9E57 /* Vendor */,
 				FA38716F168101DC0024287F /* WebKit.framework */,
 				FAEA5DA11680ED20009F2FB8 /* Stripe Push */,
@@ -208,11 +228,13 @@
 				FAEA5DAE1680ED20009F2FB8 /* AppDelegate.m */,
 				FAEA5DB01680ED20009F2FB8 /* MainMenu.xib */,
 				FAEA5DA21680ED20009F2FB8 /* Supporting Files */,
-				FA38716A168101AF0024287F /* StripeConnect.h */,
-				FA38716B168101AF0024287F /* StripeConnect.m */,
-				FA38716C168101AF0024287F /* StripeConnect.xib */,
 				FA951A8916853140003B9E57 /* Client.h */,
 				FA951A8A16853140003B9E57 /* Client.m */,
+				FA951A8C168621CB003B9E57 /* User.h */,
+				FA951A8D168621CB003B9E57 /* User.m */,
+				FA951A951686ADD5003B9E57 /* StripeConnect.h */,
+				FA951A961686ADD5003B9E57 /* StripeConnect.m */,
+				FA951A971686ADD5003B9E57 /* StripeConnect.xib */,
 			);
 			path = "Stripe Push";
 			sourceTree = "<group>";
@@ -284,12 +306,12 @@
 				FAEA5DA61680ED20009F2FB8 /* InfoPlist.strings in Resources */,
 				FAEA5DAC1680ED20009F2FB8 /* Credits.rtf in Resources */,
 				FAEA5DB21680ED20009F2FB8 /* MainMenu.xib in Resources */,
-				FA38716E168101AF0024287F /* StripeConnect.xib in Resources */,
 				FA951A5D168514BD003B9E57 /* .gitignore in Resources */,
 				FA951A5E168514BD003B9E57 /* MASPreferencesWindow.xib in Resources */,
 				FA951A60168514BD003B9E57 /* README.md in Resources */,
 				FA951A66168515BC003B9E57 /* GeneralPreferences.xib in Resources */,
 				FA951A6B1685279E003B9E57 /* AccountPreferences.xib in Resources */,
+				FA951A991686ADD5003B9E57 /* StripeConnect.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +325,6 @@
 				FAEA5DA81680ED20009F2FB8 /* main.m in Sources */,
 				FAEA5DAF1680ED20009F2FB8 /* AppDelegate.m in Sources */,
 				FAEA5DBA1680ED76009F2FB8 /* StatusMenu.m in Sources */,
-				FA38716D168101AF0024287F /* StripeConnect.m in Sources */,
 				FA951A5F168514BD003B9E57 /* MASPreferencesWindowController.m in Sources */,
 				FA951A65168515BC003B9E57 /* GeneralPreferences.m in Sources */,
 				FA951A6A1685279E003B9E57 /* AccountPreferences.m in Sources */,
@@ -317,6 +338,9 @@
 				FA951A871685305C003B9E57 /* AFXMLRequestOperation.m in Sources */,
 				FA951A881685305C003B9E57 /* UIImageView+AFNetworking.m in Sources */,
 				FA951A8B16853140003B9E57 /* Client.m in Sources */,
+				FA951A8E168621CB003B9E57 /* User.m in Sources */,
+				FA951A941686A65F003B9E57 /* NSFileManager+DirectoryLocations.m in Sources */,
+				FA951A981686ADD5003B9E57 /* StripeConnect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

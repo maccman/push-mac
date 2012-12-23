@@ -7,8 +7,19 @@
 //
 
 #import "AppDelegate.h"
+#import "User.h"
+#import "NSFileManager+DirectoryLocations.h"
 
 @implementation AppDelegate
+
+- (void)awakeFromNib {
+    [self loadData];
+}
+
+- (void) applicationWillTerminate:(NSNotification *)notification {
+    NSLog(@"Going to save data");
+    [self saveData];
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -29,9 +40,18 @@
     NSLog(@"Error in registration. Error: %@", error);
 }
 
-- (void)application:(NSApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    NSLog(@"Got device token: %@", [deviceToken description]);
-    [[NSUserDefaults standardUserDefaults] setObject:[deviceToken description] forKey:@"deviceToken"];
+- (void)application:(NSApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceTokenData {
+    
+    NSString* deviceToken = [deviceTokenData description];
+    
+    NSString* strippedDeviceToken = [deviceToken
+                                     stringByReplacingOccurrencesOfString: @"[ <>]"
+                                     withString:@""
+                                     options:NSRegularExpressionSearch
+                                     range:NSMakeRange(0, deviceToken.length)];
+    
+    [User sharedUser].deviceToken = strippedDeviceToken;
+    NSLog(@"Got device token: %@", [User sharedUser].deviceToken);
 }
 
 - (void)application:(NSApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
@@ -40,6 +60,22 @@
 
 - (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification {
     return YES;
+}
+
+- (NSString*) dataPath {
+    NSString *path = [[NSFileManager defaultManager] applicationSupportDirectory];
+    return [path stringByAppendingPathComponent:@"data.plist"];
+}
+
+- (void) saveData {
+    [NSKeyedArchiver archiveRootObject: [User sharedUser] toFile: [self dataPath]];
+    NSLog(@"Saved user: %@", [User sharedUser].email);
+}
+
+- (void) loadData {
+    User* user = [NSKeyedUnarchiver unarchiveObjectWithFile: [self dataPath]];
+    if (user) [User setSharedUser:user];
+    NSLog(@"Loaded user: %@", [User sharedUser].email);
 }
 
 @end

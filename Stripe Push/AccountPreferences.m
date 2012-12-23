@@ -7,6 +7,7 @@
 //
 
 #import "AccountPreferences.h"
+#import "User.h"
 
 @implementation AccountPreferences
 
@@ -15,8 +16,24 @@
     return [super initWithNibName:@"AccountPreferences" bundle:nil];
 }
 
-- (void) windowDidLoad {
-    NSLog(@"window loaded");
+- (void) awakeFromNib {
+    [self setAuthToggleButtonTitle];
+    [self.user addObserver:self forKeyPath:@"authorized" options:NSKeyValueObservingOptionNew context:nil];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath
+                      ofObject:(id)object
+                        change:(NSDictionary *)change
+                       context:(void *)context {
+    [self setAuthToggleButtonTitle];
+}
+
+- (void) setAuthToggleButtonTitle {
+    if (self.user.authorized) {
+        [self.authToggleButton setTitle:@"Unlink this computer..."];
+    } else {
+        [self.authToggleButton setTitle:@"Link this computer..."];
+    }
 }
 
 #pragma mark -
@@ -37,9 +54,16 @@
     return @"Account";
 }
 
-- (BOOL) commitEditing {
-//    Send rest request
-    return[super commitEditing];
+- (User *)user {
+    return [User sharedUser];
+}
+
+- (IBAction)authToggle:(id)sender {    
+    if (self.user.authorized) {
+        [self.user deauthorize:nil];
+    } else {
+        [self.user authorize:nil];
+    }
 }
 
 @end

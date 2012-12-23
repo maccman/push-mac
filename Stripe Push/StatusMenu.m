@@ -14,29 +14,16 @@
 
 @implementation StatusMenu
 
-@synthesize stripeConnect;
-
-- authenticate {
-    if (self.stripeConnect == nil) {
-        NSString* deviceToken = [[NSUserDefaults standardUserDefaults] stringForKey:@"deviceToken"];
-        self.stripeConnect = [[StripeConnect alloc] initWithToken: deviceToken];
-    }
-    [self.stripeConnect showWindow:nil];
-}
-
 - (IBAction)openPreferences:(id)sender {
-    if (self.preferences == nil) {
+    if (!preferences) {
         NSViewController *generalPreferences = [[GeneralPreferences alloc] init];
         NSViewController *accountPreferences = [[AccountPreferences alloc] init];
         NSArray *controllers = [[NSArray alloc] initWithObjects:generalPreferences, accountPreferences, nil];
-        self.preferences = [[MASPreferencesWindowController alloc] initWithViewControllers:controllers title:@"Preferences"];
+        preferences = [[MASPreferencesWindowController alloc] initWithViewControllers:controllers title:@"Preferences"];
     }
-    [self.preferences selectControllerAtIndex:0];
-    [self.preferences showWindow:nil];
-}
-
-- (IBAction)quit:(id)sender {
-    [NSApp terminate: nil];
+    [NSApp activateIgnoringOtherApps:YES];
+    [preferences selectControllerAtIndex:0];
+    [preferences showWindow:nil];
 }
 
 @end

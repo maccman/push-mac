@@ -8,33 +8,25 @@
 
 #import "StripeConnect.h"
 #import "Constants.h"
-
-@interface StripeConnect ()
-
-@end
+#import "User.h"
 
 @implementation StripeConnect
 
 @synthesize webView, url;
 
-- (id) initWithToken: (NSString *)deviceToken {
+- (id) init {
     self = [super initWithWindowNibName:@"StripeConnect"];
     
-    NSString* strippedDeviceToken = [deviceToken
-                                     stringByReplacingOccurrencesOfString: @"[ <>]"
-                                     withString:@""
-                                     options:NSRegularExpressionSearch
-                                     range:NSMakeRange(0, deviceToken.length)];
+    NSString* deviceToken = [User sharedUser].deviceToken;
+    
     
     NSString* endpoint = [NSString
                           stringWithFormat:@"%@%@%@",
                           kEndpoint,
                           @"/auth?device_token=",
-                          strippedDeviceToken];
+                          deviceToken];
     
     self.url = [NSURL URLWithString:endpoint];
-        
-    [self.window setFrame: NSMakeRect(0,0,850,490) display: YES];
     
     return self;
 }
@@ -43,14 +35,10 @@
 {
     [super windowDidLoad];
     
-    NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage
-                                          sharedHTTPCookieStorage];
-    [cookieStorage setCookieAcceptPolicy:NSHTTPCookieAcceptPolicyAlways];
-    
     if (self.url != nil) {
         [self.webView setMainFrameURL:[self.url absoluteString]];
     }
-
+    
 }
 
 - (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame {
@@ -61,6 +49,15 @@
     if ([[sender mainFrameURL] isEqualToString:endpoint]) {
         // We've authenticated
         [self close];
+        
+        [[User sharedUser] load:^(User *user, NSError *error) {
+            if (error) {
+                NSLog(@"Error loading user: %@", error);
+            } else {
+                NSLog(@"User authorized");
+                [User sharedUser].authorized = true;
+            }
+        }];
     }
 }
 
