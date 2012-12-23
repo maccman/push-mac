@@ -58,7 +58,7 @@
     return [User sharedUser];
 }
 
-- (IBAction)authToggle:(id)sender {    
+- (IBAction)authToggle:(id)sender {
     if (self.user.authorized) {
         [self.user deauthorize:nil];
     } else {

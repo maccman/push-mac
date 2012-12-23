@@ -19,7 +19,7 @@ static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedUser = [[User alloc] init];
     });
-    
+
     return _sharedUser;
 }
 
@@ -55,7 +55,7 @@ static dispatch_once_t onceToken;
         @"charge_notifications": self.chargeNotifications,
         @"transfer_notifications": self.transferNotifications
     };
-    
+
     [self save:params block:block];
 }
 

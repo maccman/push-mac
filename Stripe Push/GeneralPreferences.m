@@ -55,7 +55,7 @@
 - (BOOL) commitEditing {
     if (self.user.authorized) {
         NSLog(@"Saving user");
-        
+
         [self.user saveSelf:^(NSError *error) {
             NSLog(@"Saved user");
             if (error) {
@@ -63,7 +63,7 @@
             }
         }];
     }
-    
+
     return[super commitEditing];
 }
 

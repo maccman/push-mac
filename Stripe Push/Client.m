@@ -18,7 +18,7 @@
     dispatch_once(&onceToken, ^{
         _sharedClient = [[Client alloc] initWithBaseURL:[NSURL URLWithString:kEndpoint]];
     });
-    
+
     return _sharedClient;
 }
 
@@ -27,10 +27,10 @@
     if (!self) {
         return nil;
     }
-    
-    [self registerHTTPOperationClass:[AFJSONRequestOperation class]];    
-	[self setDefaultHeader:@"Accept" value:@"application/json"];
-    
+
+    [self registerHTTPOperationClass:[AFJSONRequestOperation class]];
+    [self setDefaultHeader:@"Accept" value:@"application/json"];
+
     return self;
 }
 

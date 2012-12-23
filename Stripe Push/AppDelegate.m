@@ -41,15 +41,15 @@
 }
 
 - (void)application:(NSApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceTokenData {
-    
+
     NSString* deviceToken = [deviceTokenData description];
-    
+
     NSString* strippedDeviceToken = [deviceToken
                                      stringByReplacingOccurrencesOfString: @"[ <>]"
                                      withString:@""
                                      options:NSRegularExpressionSearch
                                      range:NSMakeRange(0, deviceToken.length)];
-    
+
     [User sharedUser].deviceToken = strippedDeviceToken;
     NSLog(@"Got device token: %@", [User sharedUser].deviceToken);
 }
