@@ -61,17 +61,19 @@ static dispatch_once_t onceToken;
 
 - (void)save:(NSDictionary*)params block:(void (^)(NSError *error))block {
     [[Client sharedClient] putPath:@"/user"
-                     parameters:params
-                        success:^(AFHTTPRequestOperation *operation, id JSON) {
+                        parameters:params
+                           success:^(AFHTTPRequestOperation *operation, id JSON) {
                             [self update:JSON];
                             block(nil);
-                        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                        }  failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                             block(error);
                         }];
 }
 
 - (void)deauthorize:(void (^)(NSError *error))block {
-    [[Client sharedClient] deletePath:@"/auth" parameters:@{@"deviceToken": self.deviceToken} success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [[Client sharedClient] deletePath:@"/auth"
+                           parameters:@{@"deviceToken": self.deviceToken}
+                              success:^(AFHTTPRequestOperation *operation, id responseObject) {
         self.authorized = false;
         self.email = nil;
         if (block) block(nil);

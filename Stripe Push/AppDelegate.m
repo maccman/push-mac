@@ -44,13 +44,12 @@
 
     NSString* deviceToken = [deviceTokenData description];
 
-    NSString* strippedDeviceToken = [deviceToken
-                                     stringByReplacingOccurrencesOfString: @"[ <>]"
-                                     withString:@""
-                                     options:NSRegularExpressionSearch
-                                     range:NSMakeRange(0, deviceToken.length)];
+    deviceToken = [deviceToken stringByReplacingOccurrencesOfString:@"[ <>]"
+                                                         withString:@""
+                                                            options:NSRegularExpressionSearch
+                                                              range:NSMakeRange(0, deviceToken.length)];
 
-    [User sharedUser].deviceToken = strippedDeviceToken;
+    [User sharedUser].deviceToken = deviceToken;
     NSLog(@"Got device token: %@", [User sharedUser].deviceToken);
 }
 

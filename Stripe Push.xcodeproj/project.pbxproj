@@ -34,7 +34,6 @@
 		FAEA5D9C1680ED20009F2FB8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEA5D9B1680ED20009F2FB8 /* Cocoa.framework */; };
 		FAEA5DA61680ED20009F2FB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAEA5DA41680ED20009F2FB8 /* InfoPlist.strings */; };
 		FAEA5DA81680ED20009F2FB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA5DA71680ED20009F2FB8 /* main.m */; };
-		FAEA5DAC1680ED20009F2FB8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FAEA5DAA1680ED20009F2FB8 /* Credits.rtf */; };
 		FAEA5DAF1680ED20009F2FB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA5DAE1680ED20009F2FB8 /* AppDelegate.m */; };
 		FAEA5DB21680ED20009F2FB8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAEA5DB01680ED20009F2FB8 /* MainMenu.xib */; };
 		FAEA5DBA1680ED76009F2FB8 /* StatusMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA5DB91680ED76009F2FB8 /* StatusMenu.m */; };
@@ -93,7 +92,6 @@
 		FAEA5DA51680ED20009F2FB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAEA5DA71680ED20009F2FB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAEA5DA91680ED20009F2FB8 /* Stripe Push-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stripe Push-Prefix.pch"; sourceTree = "<group>"; };
-		FAEA5DAB1680ED20009F2FB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		FAEA5DAD1680ED20009F2FB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAEA5DAE1680ED20009F2FB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FAEA5DB11680ED20009F2FB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -247,7 +245,6 @@
 				FAEA5DA41680ED20009F2FB8 /* InfoPlist.strings */,
 				FAEA5DA71680ED20009F2FB8 /* main.m */,
 				FAEA5DA91680ED20009F2FB8 /* Stripe Push-Prefix.pch */,
-				FAEA5DAA1680ED20009F2FB8 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -304,7 +301,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAEA5DA61680ED20009F2FB8 /* InfoPlist.strings in Resources */,
-				FAEA5DAC1680ED20009F2FB8 /* Credits.rtf in Resources */,
 				FAEA5DB21680ED20009F2FB8 /* MainMenu.xib in Resources */,
 				FA951A5D168514BD003B9E57 /* .gitignore in Resources */,
 				FA951A5E168514BD003B9E57 /* MASPreferencesWindow.xib in Resources */,
@@ -353,14 +349,6 @@
 				FAEA5DA51680ED20009F2FB8 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FAEA5DAA1680ED20009F2FB8 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAEA5DAB1680ED20009F2FB8 /* en */,
-			);
-			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
 		FAEA5DB01680ED20009F2FB8 /* MainMenu.xib */ = {

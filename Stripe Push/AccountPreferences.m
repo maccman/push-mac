@@ -11,12 +11,18 @@
 
 @implementation AccountPreferences
 
+@synthesize versionLabel, authToggleButton;
+
 - (id)init
 {
     return [super initWithNibName:@"AccountPreferences" bundle:nil];
 }
 
 - (void) awakeFromNib {
+    NSString *appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
+    NSString *appVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+    [self.versionLabel setStringValue:[NSString stringWithFormat:@"%@ v%@", appName, appVersion]];
+    
     [self setAuthToggleButtonTitle];
     [self.user addObserver:self forKeyPath:@"authorized" options:NSKeyValueObservingOptionNew context:nil];
 }

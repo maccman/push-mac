@@ -14,6 +14,7 @@
 
 @property (readonly) User* user;
 @property IBOutlet NSButton* authToggleButton;
+@property IBOutlet NSTextField* versionLabel;
 
 - (IBAction)authToggle:(id)sender;
 
