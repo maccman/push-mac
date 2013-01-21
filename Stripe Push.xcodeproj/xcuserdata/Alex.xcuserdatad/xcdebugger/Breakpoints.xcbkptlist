@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Stripe Push/StatusMenu.m"
-         timestampString = "378445089.607855"
+         timestampString = "380431119.881333"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "30"
-         endingLineNumber = "30"
+         startingLineNumber = "22"
+         endingLineNumber = "22"
          landmarkName = "-openPreferences:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -21,22 +21,22 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Stripe Push/Client.m"
-         timestampString = "377827738.482767"
+         timestampString = "380431119.881333"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "10"
-         endingLineNumber = "10">
+         startingLineNumber = "2"
+         endingLineNumber = "2">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Stripe Push/User.m"
-         timestampString = "377910481.56463"
+         timestampString = "380431119.881333"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "63"
-         endingLineNumber = "63"
+         startingLineNumber = "55"
+         endingLineNumber = "55"
          landmarkName = "-save:block:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -45,11 +45,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Stripe Push/User.m"
-         timestampString = "377910481.56463"
+         timestampString = "380431119.881333"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "58"
-         endingLineNumber = "58"
+         startingLineNumber = "50"
+         endingLineNumber = "50"
          landmarkName = "-saveSelf:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -58,11 +58,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Stripe Push/AccountPreferences.m"
-         timestampString = "378000612.543044"
+         timestampString = "380431119.881333"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "63"
-         endingLineNumber = "63"
+         startingLineNumber = "55"
+         endingLineNumber = "55"
          landmarkName = "-user"
          landmarkType = "5">
       </FileBreakpoint>
@@ -71,11 +71,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Stripe Push/AccountPreferences.m"
-         timestampString = "378000612.543044"
+         timestampString = "380431119.881333"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "38"
-         endingLineNumber = "38"
+         startingLineNumber = "30"
+         endingLineNumber = "30"
          landmarkName = "-setAuthToggleButtonTitle"
          landmarkType = "5">
       </FileBreakpoint>
@@ -84,11 +84,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Stripe Push/AccountPreferences.m"
-         timestampString = "378000612.543044"
+         timestampString = "380431119.881333"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "68"
-         endingLineNumber = "68"
+         startingLineNumber = "60"
+         endingLineNumber = "60"
          landmarkName = "-authToggle:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -97,11 +97,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Stripe Push/User.m"
-         timestampString = "377975035.836503"
+         timestampString = "380431119.881333"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "89"
-         endingLineNumber = "89"
+         startingLineNumber = "81"
+         endingLineNumber = "81"
          landmarkName = "-authorize:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -110,11 +110,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Stripe Push/User.m"
-         timestampString = "377975035.836503"
+         timestampString = "380431119.881333"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "85"
-         endingLineNumber = "85"
+         startingLineNumber = "77"
+         endingLineNumber = "77"
          landmarkName = "-authorize:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -123,11 +123,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Stripe Push/AccountPreferences.m"
-         timestampString = "378000612.543044"
+         timestampString = "380431119.881333"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "71"
-         endingLineNumber = "71"
+         startingLineNumber = "63"
+         endingLineNumber = "63"
          landmarkName = "-authToggle:"
          landmarkType = "5">
       </FileBreakpoint>

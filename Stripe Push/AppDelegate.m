@@ -1,11 +1,3 @@
-//
-//  AppDelegate.m
-//  Stripe Push
-//
-//  Created by Alex MacCaw on 12/18/12.
-//  Copyright (c) 2012 Stripe. All rights reserved.
-//
-
 #import "AppDelegate.h"
 #import "User.h"
 #import "NSFileManager+DirectoryLocations.h"

@@ -1,11 +1,3 @@
-//
-//  Client.m
-//  Stripe Push
-//
-//  Created by Alex MacCaw on 12/21/12.
-//  Copyright (c) 2012 Stripe. All rights reserved.
-//
-
 #import "Client.h"
 #import "Constants.h"
 #import "AFJSONRequestOperation.h"

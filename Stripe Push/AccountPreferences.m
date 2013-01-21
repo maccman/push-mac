@@ -1,11 +1,3 @@
-//
-//  AccountPreferences.m
-//  Stripe Push
-//
-//  Created by Alex MacCaw on 12/21/12.
-//  Copyright (c) 2012 Stripe. All rights reserved.
-//
-
 #import "AccountPreferences.h"
 #import "User.h"
 

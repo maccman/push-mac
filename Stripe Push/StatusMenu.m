@@ -1,11 +1,3 @@
-//
-//  StatusMenu.m
-//  Stripe Push
-//
-//  Created by Alex MacCaw on 12/18/12.
-//  Copyright (c) 2012 Stripe. All rights reserved.
-//
-
 #import "StatusMenu.h"
 #import "StripeConnect.h"
 #import "GeneralPreferences.h"
