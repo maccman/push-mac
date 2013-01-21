@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>icon</string>
 	<key>CFBundleIdentifier</key>
 	<string>stripe.push.mac</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -27,9 +27,9 @@
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>LSUIElement</key>
-	<true/>
+	<false/>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2012 Stripe. All rights reserved.</string>
+	<string>Copyright © 2012 Alex MacCaw. All rights reserved.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
