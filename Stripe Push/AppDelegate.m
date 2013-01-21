@@ -31,7 +31,7 @@
 - (void) activateStatusMenu {
     NSStatusBar *bar = [NSStatusBar systemStatusBar];
     statusItem = [bar statusItemWithLength:NSVariableStatusItemLength];
-    [statusItem setTitle:@"Stripe"];
+    [statusItem setImage:[NSImage imageNamed:@"s"]];
     [statusItem setHighlightMode:YES];
     [statusItem setMenu:statusMenu];
 }

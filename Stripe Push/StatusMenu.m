@@ -11,8 +11,15 @@
 #import "GeneralPreferences.h"
 #import "AccountPreferences.h"
 #import "MASPreferencesWindowController.h"
+#import "User.h"
 
 @implementation StatusMenu
+
+- (void)awakeFromNib {
+    if ( ![User sharedUser].authorized ) {
+        [self openAccountPreferences];
+    }
+}
 
 - (IBAction)openPreferences:(id)sender {
     if (!preferences) {
@@ -24,6 +31,11 @@
     [NSApp activateIgnoringOtherApps:YES];
     [preferences selectControllerAtIndex:0];
     [preferences showWindow:nil];
+}
+
+- (void)openAccountPreferences {
+    [self openPreferences:nil];
+    [preferences selectControllerAtIndex:1];
 }
 
 @end

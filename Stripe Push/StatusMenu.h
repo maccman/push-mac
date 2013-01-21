@@ -15,5 +15,6 @@ MASPreferencesWindowController* preferences;
 }
 
 - (IBAction) openPreferences:(id)sender;
+- (void) openAccountPreferences;
 
 @end

@@ -52,7 +52,7 @@
 
 - (NSImage *)toolbarItemImage
 {
-    return [NSImage imageNamed:NSImageNamePreferencesGeneral];
+    return [NSImage imageNamed:@"user"];
 }
 
 - (NSString *)toolbarItemLabel
