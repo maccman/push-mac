@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA387170168101DC0024287F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA38716F168101DC0024287F /* WebKit.framework */; };
-		FA85F16816AD03FD00D258C0 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = FA85F16616AD03FD00D258C0 /* icon.icns */; };
-		FA85F16916AD03FD00D258C0 /* icon@2x.icns in Resources */ = {isa = PBXBuildFile; fileRef = FA85F16716AD03FD00D258C0 /* icon@2x.icns */; };
+		FA85F16C16AD14C100D258C0 /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = FA85F16B16AD14C100D258C0 /* icon.iconset */; };
 		FA951A5D168514BD003B9E57 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FA951A57168514BD003B9E57 /* .gitignore */; };
 		FA951A5E168514BD003B9E57 /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA951A59168514BD003B9E57 /* MASPreferencesWindow.xib */; };
 		FA951A5F168514BD003B9E57 /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA951A5B168514BD003B9E57 /* MASPreferencesWindowController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -50,8 +49,7 @@
 		FA7D490416ACCEDE0023E9DC /* Preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Preview.png; sourceTree = "<group>"; };
 		FA7D490516ACCEDE0023E9DC /* Thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thumbnail.png; sourceTree = "<group>"; };
 		FA7D490616ACCEDE0023E9DC /* version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = version; sourceTree = "<group>"; };
-		FA85F16616AD03FD00D258C0 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = SOURCE_ROOT; };
-		FA85F16716AD03FD00D258C0 /* icon@2x.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "icon@2x.icns"; sourceTree = SOURCE_ROOT; };
+		FA85F16B16AD14C100D258C0 /* icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icon.iconset; sourceTree = "<group>"; };
 		FA951A57168514BD003B9E57 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FA951A58168514BD003B9E57 /* MASPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferencesViewController.h; sourceTree = "<group>"; };
 		FA951A59168514BD003B9E57 /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASPreferencesWindow.xib; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 		FA951A951686ADD5003B9E57 /* StripeConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StripeConnect.h; sourceTree = "<group>"; };
 		FA951A961686ADD5003B9E57 /* StripeConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StripeConnect.m; sourceTree = "<group>"; };
 		FA951A971686ADD5003B9E57 /* StripeConnect.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StripeConnect.xib; sourceTree = "<group>"; };
-		FABB3E6616ACFABD00707CA9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		FABB3E6F16ACFABD00707CA9 /* s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s.png; sourceTree = "<group>"; };
 		FABB3E7816ACFABD00707CA9 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		FAEA5D971680ED20009F2FB8 /* Stripe Push.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stripe Push.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,9 +213,7 @@
 		FABB3E6516ACFABD00707CA9 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				FABB3E6616ACFABD00707CA9 /* icon.png */,
-				FA85F16616AD03FD00D258C0 /* icon.icns */,
-				FA85F16716AD03FD00D258C0 /* icon@2x.icns */,
+				FA85F16B16AD14C100D258C0 /* icon.iconset */,
 				FABB3E6F16ACFABD00707CA9 /* s.png */,
 				FABB3E7816ACFABD00707CA9 /* user.png */,
 			);
@@ -365,8 +360,7 @@
 				FA951A991686ADD5003B9E57 /* StripeConnect.xib in Resources */,
 				FABB3E7F16ACFABD00707CA9 /* s.png in Resources */,
 				FABB3E8516ACFABD00707CA9 /* user.png in Resources */,
-				FA85F16816AD03FD00D258C0 /* icon.icns in Resources */,
-				FA85F16916AD03FD00D258C0 /* icon@2x.icns in Resources */,
+				FA85F16C16AD14C100D258C0 /* icon.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,13 +471,13 @@
 		FAEA5DB61680ED20009F2FB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Alexander MacCaw";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stripe Push/Stripe Push-Prefix.pch";
 				INFOPLIST_FILE = "Stripe Push/Stripe Push-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "97A9BAC5-ADEB-438C-9895-B1B4AAA0EDC2";
+				PROVISIONING_PROFILE = "6D208822-51B9-4235-89A3-B7958DBA519C";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -491,13 +485,13 @@
 		FAEA5DB71680ED20009F2FB8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Alexander MacCaw";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stripe Push/Stripe Push-Prefix.pch";
 				INFOPLIST_FILE = "Stripe Push/Stripe Push-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "97A9BAC5-ADEB-438C-9895-B1B4AAA0EDC2";
+				PROVISIONING_PROFILE = "6D208822-51B9-4235-89A3-B7958DBA519C";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

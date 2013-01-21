@@ -131,5 +131,16 @@
          landmarkName = "-authToggle:"
          landmarkType = "5">
       </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Vendor/AFNetworking/AFNetworking/AFHTTPClient.h"
+         timestampString = "380441807.927116"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "71"
+         endingLineNumber = "71">
+      </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>
