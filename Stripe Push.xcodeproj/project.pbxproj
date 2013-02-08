@@ -471,13 +471,13 @@
 		FAEA5DB61680ED20009F2FB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Alexander MacCaw";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stripe Push/Stripe Push-Prefix.pch";
 				INFOPLIST_FILE = "Stripe Push/Stripe Push-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "6D208822-51B9-4235-89A3-B7958DBA519C";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -485,13 +485,13 @@
 		FAEA5DB71680ED20009F2FB8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Alexander MacCaw";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stripe Push/Stripe Push-Prefix.pch";
 				INFOPLIST_FILE = "Stripe Push/Stripe Push-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "6D208822-51B9-4235-89A3-B7958DBA519C";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

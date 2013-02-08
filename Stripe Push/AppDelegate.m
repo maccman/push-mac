@@ -17,7 +17,7 @@
 {
     [self activateStatusMenu];
     [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:(id)self];
-    [[NSApplication sharedApplication] registerForRemoteNotificationTypes:NSRemoteNotificationTypeAlert];
+    [[NSApplication sharedApplication] registerForRemoteNotificationTypes:NSRemoteNotificationTypeAlert|NSRemoteNotificationTypeSound];
 }
 
 - (void) activateStatusMenu {
