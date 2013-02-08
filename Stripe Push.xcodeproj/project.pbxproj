@@ -50,6 +50,7 @@
 		FA7D490516ACCEDE0023E9DC /* Thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thumbnail.png; sourceTree = "<group>"; };
 		FA7D490616ACCEDE0023E9DC /* version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = version; sourceTree = "<group>"; };
 		FA85F16B16AD14C100D258C0 /* icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icon.iconset; sourceTree = "<group>"; };
+		FA8DD6F216C4E997006A7957 /* Stripe Push.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Stripe Push.entitlements"; sourceTree = "<group>"; };
 		FA951A57168514BD003B9E57 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FA951A58168514BD003B9E57 /* MASPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferencesViewController.h; sourceTree = "<group>"; };
 		FA951A59168514BD003B9E57 /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASPreferencesWindow.xib; sourceTree = "<group>"; };
@@ -264,6 +265,7 @@
 		FAEA5DA11680ED20009F2FB8 /* Stripe Push */ = {
 			isa = PBXGroup;
 			children = (
+				FA8DD6F216C4E997006A7957 /* Stripe Push.entitlements */,
 				FA951A62168515BC003B9E57 /* GeneralPreferences.h */,
 				FA951A671685279E003B9E57 /* AccountPreferences.h */,
 				FA951A681685279E003B9E57 /* AccountPreferences.m */,
@@ -471,6 +473,7 @@
 		FAEA5DB61680ED20009F2FB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Stripe Push/Stripe Push.entitlements";
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Alexander MacCaw";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -485,6 +488,7 @@
 		FAEA5DB71680ED20009F2FB8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Stripe Push/Stripe Push.entitlements";
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Alexander MacCaw";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
